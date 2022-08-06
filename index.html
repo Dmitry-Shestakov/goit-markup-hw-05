@@ -29,8 +29,8 @@
         <nav>
           <ul class="site-nav list">
             <li class="item"><a href="/index.html" class="link current">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="/" class="link">Контакты</a></li>
+            <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+            <li class="item"><a href="/" class="link current">Контакты</a></li>
           </ul>
         </nav>
 
@@ -38,7 +38,7 @@
         <div class="auth-nav-position">
           <ul class="auth-nav list">
             <li class="item icon-malito">
-              <a href="malito:info@devstudio.com" class="link-auth-nav">
+              <a href="malito:info@devstudio.com" class="link-auth-nav current">
                 <svg class="contacts-icon" width="16" height="12">
                   <use href="./images/symbol-defs (1).svg#icon-envelope"></use>
                 </svg>
@@ -46,7 +46,7 @@
               >
             </li>
             <li class="item icon-tel">
-              <a href="tel:+380961111111" class="link-auth-nav">
+              <a href="tel:+380961111111" class="link-auth-nav current">
                 <svg class="contacts-icon" width="10" height="16">
                   <use href="./images/symbol-defs (1).svg#icon-smartphone"></use>
                 </svg>
@@ -63,9 +63,10 @@
       <section class="hero hero-bg">
         <div class="container">
           <h1 class="hero-title">ЭФФЕКТНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
         </div>
       </section>
+
       <!--Особенности-->
       <section class="features">
         <div class="container">
@@ -123,9 +124,18 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="services-list list">
-            <li><img src="./images/box1.jpg" alt="Программирование" width="370" /></li>
-            <li><img src="./images/box2.jpg" alt="Мобильные приложения" width="370" /></li>
-            <li><img src="./images/box3.jpg" alt="Дизайн" width="370" /></li>
+            <div class="services-wrap">
+              <li><img src="./images/box1.jpg" alt="Программирование" width="370" /></li>
+              <p class="services-top-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+            </div>
+            <div class="services-wrap">
+              <li><img src="./images/box2.jpg" alt="Мобильные приложения" width="370" /></li>
+              <p class="services-top-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+            </div>
+            <div class="services-wrap">
+              <li><img src="./images/box3.jpg" alt="Дизайн" width="370" /></li>
+              <p class="services-top-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+            </div>
           </ul>
         </div>
       </section>
@@ -525,5 +535,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close type="button" class="btn-model">
+          <svg class="modal-close" width="11" height="11">
+            <use href="./images/symbol-defs (1).svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
