@@ -290,14 +290,6 @@ header {
   }
 }
 
-.modal-close {
-  /* fill: #000000; */
-  /* border-color: #ffffff; */
-}
-
-/* <svg class="modal-close" width="11" height="11">
-                  <use href="./images/symbol-defs (1).svg#icon-close"></use>
-                </svg> */
 /* Features */
 
 .features {
@@ -739,8 +731,7 @@ header {
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-cards {
