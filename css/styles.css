@@ -235,11 +235,6 @@ header {
   animation: scale 3s infinite;
 }
 
-/* .hero-button:hover {
-  color: #ffffff;
-  background-color: rgba(245, 244, 250, 1);
-} */
-
 @keyframes scale {
   0% {
     background-color: rgba(245, 244, 250, 1);
