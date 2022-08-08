@@ -119,9 +119,9 @@ header {
   position: relative;
 }
 
-.current:hover::after {
+/* .current:hover::after {
   background-color: var(--accent-color);
-}
+} */
 
 .current::after {
   position: absolute;
@@ -131,7 +131,7 @@ header {
   border-radius: 2px;
   left: 0;
   bottom: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent-color);
 }
 
 /* Auth-nav */
@@ -160,6 +160,7 @@ header {
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
